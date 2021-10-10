@@ -6,5 +6,31 @@
   </head>
   <body>
     <h1>覺得厲害</h1>
+    <input type="button" value="一化網頁設計" name="按鈕名稱" class="Y_button"  onclick="ShowMeDate()">
   </body>
 </html>
+
+<style> 
+  .Y_button
+  { border:0;
+    background-color:#003C9D;
+    color:#fff;
+    border-radius:10px;
+    cursor:pointer;
+    width:400px;
+    height:100px;
+  }
+
+  .Y_button:hover{
+  color:#003C9D;
+  background-color:#fff;
+  border:2px #003C9D solid;
+}
+</style>
+
+<script language="javascript">
+function ShowMeDate() {
+　var Today=new Date();
+　alert("今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
+}
+</script>
